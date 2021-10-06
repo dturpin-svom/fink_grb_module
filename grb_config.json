@@ -1,0 +1,12 @@
+{
+	"cat_file" : "all_fermi-gbm.xml",
+	"mission_name" : "Fermi",
+	"size_time_window" : 1.5,
+	"max_cone_search" : 5,
+	"selected_burst" : "GRB210204270",
+	"src_type_filt" : ["SN candidate","Ambiguous","Unknown"],
+	"sigma_grb_ass" : 5,
+	"grb_det_rate" : 250,
+	"grb_det_rate_unit" : "event/yr (Swift  = 100; Fermi = 250)"
+	
+}
