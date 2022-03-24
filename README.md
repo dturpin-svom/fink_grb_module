@@ -11,4 +11,4 @@ A project to develop a science module in Fink devoted to the direct search for L
 2/ A grb_config.json file is provided to modify the different key parameters used to do the analysis
 NOTE: The Fermi GRB210204270 is chosen as an example as it is associated with ZTF21aagwbjr discovered by the ZTFRest pipeline (https://github.com/growth-astro/ztfrest) and later robustly identified as the afterglow counterpart of GRB210204270. 
 
-3/ A Jupyter notebook is provided as a template to run the different steps of the search for identifying a credible association between a chosen GRB and some ZTF candidates
+3/ A Jupyter notebook is provided as a template to run the different steps of the search for identifying a credible association between a chosen GRB and some ZTF candidates.
