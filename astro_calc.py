@@ -92,8 +92,6 @@ def sig_est(prob):
     
     return res.x
 
-
-
 def mag2fluxcal_snana(magpsf: float, sigmapsf: float):
     """ Conversion from magnitude to Fluxcal from SNANA manual
     Parameters

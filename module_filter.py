@@ -10,6 +10,8 @@ import numpy as np
 from module_utils import get_grb_config, get_pdf_measure
 from astro_calc import dc_mag
 import pandas as pd
+from scipy import special
+from math import sqrt
 
 def det_history_filter(list_pdf_obj,grb_date):
     hist_filter = []
@@ -48,8 +50,8 @@ def cut_grb_mod(pdfs,grb_config_path):
     rb_mask_filter = pdfs['i:drb'] >= rb_threshold
     
     # Build the filter on the serendipituous association between the GRB and the ZTF candidates
-    sigma_grb_ass = grb_config['sigma_grb_ass']
-    pser_mask_filter = pdfs['v:grbSigmaAss'] >= sigma_grb_ass
+    
+    pser_mask_filter = pdfs['v:Pser_grb'] >= special.erf(grb_config['sigma_grb_ass']/sqrt(2))
 
     pdf_filtered = pdfs.loc[rb_mask_filter & pser_mask_filter]
     
